@@ -20,7 +20,7 @@ const Refund = () => (
           <p>Refund requests must be submitted within 7 days of purchase.</p>
 
           <p>
-            Contact: <a href="mailto:support@neuronetai.in" className="text-primary hover:underline">support@neuronetai.in</a>
+            Contact: <a href="mailto:neuronetai1@gmail.com" className="text-primary hover:underline">neuronetai1@gmail.com</a>
           </p>
         </div>
       </div>

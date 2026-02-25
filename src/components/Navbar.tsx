@@ -53,8 +53,9 @@ const Navbar = () => {
               </Link>
             )
           )}
-          <Button size="sm" className="gradient-cta text-primary-foreground border-0 shadow-sm hover:shadow-md transition-shadow">
-            Get Early Access
+          <Button size="sm" className="gradient-cta text-primary-foreground border-0 shadow-sm hover:shadow-md transition-shadow"
+            onClick={() => { window.location.href = "/#waitlist"; }}>
+            Join Waitlist 🚀
           </Button>
         </div>
 
@@ -87,8 +88,9 @@ const Navbar = () => {
               </Link>
             )
           )}
-          <Button size="sm" className="w-full gradient-cta text-primary-foreground border-0">
-            Get Early Access
+          <Button size="sm" className="w-full gradient-cta text-primary-foreground border-0"
+            onClick={() => { setMobileOpen(false); window.location.href = "/#waitlist"; }}>
+            Join Waitlist 🚀
           </Button>
         </div>
       )}
