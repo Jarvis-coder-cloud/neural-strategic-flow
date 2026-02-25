@@ -55,7 +55,7 @@ const Privacy = () => (
               <li>Request account removal</li>
               <li>Contact support regarding privacy concerns</li>
             </ul>
-            <p className="mt-3">Contact: <a href="mailto:support@neuronetai.in" className="text-primary hover:underline">support@neuronetai.in</a></p>
+            <p className="mt-3">Contact: <a href="mailto:neuronetai1@gmail.com" className="text-primary hover:underline">neuronetai1@gmail.com</a></p>
           </div>
         </div>
       </div>

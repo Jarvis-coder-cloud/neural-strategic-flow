@@ -23,7 +23,7 @@ const Contact = () => {
           <p className="text-muted-foreground mb-4">For support, partnerships, or general inquiries, contact us.</p>
           <p className="flex items-center gap-2 text-muted-foreground mb-10">
             <Mail size={16} className="text-primary" />
-            <a href="mailto:support@neuronetai.in" className="text-primary hover:underline">support@neuronetai.in</a>
+            <a href="mailto:neuronetai1@gmail.com" className="text-primary hover:underline">neuronetai1@gmail.com</a>
           </p>
 
           {submitted ? (
