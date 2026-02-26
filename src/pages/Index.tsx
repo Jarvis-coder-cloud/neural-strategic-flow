@@ -16,7 +16,7 @@ const Index = () => {
   return (
     <Layout>
       {/* HERO */}
-      <section className="section-padding relative overflow-hidden">
+      <section className="pt-8 md:pt-12 pb-20 md:pb-28 px-4 md:px-8 relative overflow-hidden">
         <div className="gradient-glow absolute inset-0 pointer-events-none" />
         <div className="container-narrow relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
