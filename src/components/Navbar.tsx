@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import neuronetLogo from "@/assets/neuronet-logo.jpg";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -26,10 +27,13 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/40">
       <nav className="container-narrow flex items-center justify-between h-16 px-4 md:px-8">
-        <Link to="/" className="font-display text-xl font-bold text-foreground tracking-tight">
-          NeuroNet <span className="text-primary">AI</span>
+        <Link to="/" className="flex items-center gap-2.5">
+          <img src={neuronetLogo} alt="NeuroNet AI" className="w-8 h-8 rounded-lg object-contain" />
+          <span className="font-display text-xl font-bold text-foreground tracking-tight">
+            NeuroNet <span className="text-primary">AI</span>
+          </span>
         </Link>
 
         {/* Desktop */}
@@ -67,7 +71,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-background border-b border-border px-4 pb-4 space-y-3">
+        <div className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border px-4 pb-4 space-y-3 animate-fade-up">
           {navLinks.map((link) =>
             link.href.startsWith("/#") ? (
               <button
