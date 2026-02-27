@@ -32,6 +32,9 @@ const Index = () => {
               <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
                 NeuroNet AI is your <span className="font-semibold text-gradient-cool">AI Thinking + Execution Partner</span>. It analyzes your startup before helping you execute.
               </p>
+              <p className="text-sm text-muted-foreground max-w-lg leading-relaxed">
+                Unlike execution bots, NeuroNet AI thinks strategically about your startup before generating actions.
+              </p>
               <div className="flex flex-wrap gap-3 pt-2">
                 <Button
                   size="lg"
