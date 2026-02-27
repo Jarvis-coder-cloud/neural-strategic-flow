@@ -93,11 +93,11 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    @apply font-extrabold;
+    @apply font-black tracking-tight;
   }
 
   p, span, a, li, button {
-    @apply font-medium;
+    @apply font-semibold;
   }
 }
 
