@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
+import neuronetLogo from "@/assets/neuronet-logo.jpg";
 
 const Footer = () => (
   <footer className="border-t border-border bg-muted/30">
     <div className="container-narrow px-4 md:px-8 py-12">
       <div className="flex flex-col md:flex-row justify-between gap-8">
         <div>
-          <span className="font-display text-lg font-bold text-foreground tracking-tight">
-            NeuroNet <span className="text-primary">AI</span>
-          </span>
-          <p className="mt-2 text-sm text-muted-foreground max-w-xs">
+          <div className="flex items-center gap-2.5">
+            <img src={neuronetLogo} alt="NeuroNet AI" className="w-7 h-7 rounded-lg object-contain" />
+            <span className="font-display text-lg font-bold text-foreground tracking-tight">
+              NeuroNet <span className="text-primary">AI</span>
+            </span>
+          </div>
+          <p className="mt-3 text-sm text-muted-foreground max-w-xs">
             Think clearly. Build correctly.
           </p>
           <a
