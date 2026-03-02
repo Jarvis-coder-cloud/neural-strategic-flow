@@ -11,6 +11,7 @@ import DifferentiationSection from "@/components/sections/DifferentiationSection
 import VisionSection from "@/components/sections/VisionSection";
 import WaitlistSection from "@/components/sections/WaitlistSection";
 import TrustSection from "@/components/sections/TrustSection";
+import FAQSection from "@/components/sections/FAQSection";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <ProductPreviewSection />
       <DifferentiationSection />
       <TrustSection />
+      <FAQSection />
       <VisionSection />
       <WaitlistSection />
     </Layout>
