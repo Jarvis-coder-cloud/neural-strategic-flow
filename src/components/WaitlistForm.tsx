@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FunctionsHttpError } from "@supabase/supabase-js";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { supabase } from "@/integrations/supabase/client";
@@ -15,20 +16,34 @@ const WaitlistForm = () => {
     e.preventDefault();
     setLoading(true);
 
-    const { error } = await supabase.from("waitlist").insert({ name: name.trim(), email: email.trim().toLowerCase() });
+    try {
+      const { error } = await supabase.functions.invoke("waitlist-signup", {
+        body: {
+          name: name.trim(),
+          email: email.trim().toLowerCase(),
+        },
+      });
 
-    if (error) {
-      if (error.code === "23505") {
-        toast({ title: "Already on the list!", description: "This email is already registered." });
-      } else {
+      if (error) {
+        if (error instanceof FunctionsHttpError) {
+          const errorData = await error.context.json().catch(() => null);
+          if (error.context.status === 409 || errorData?.code === "duplicate_email") {
+            toast({ title: "Already on the list!", description: "This email is already registered." });
+            return;
+          }
+        }
+
         toast({ title: "Something went wrong", description: "Please try again later.", variant: "destructive" });
+        return;
       }
-    } else {
+
       setSubmitted(true);
       toast({ title: "You're on the waitlist! 🎉", description: "We'll notify you when we launch." });
+    } catch {
+      toast({ title: "Network issue", description: "Please try again in a moment.", variant: "destructive" });
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   };
 
   if (submitted) {
