@@ -1,0 +1,1 @@
+ALTER TABLE public.waitlist RENAME TO waitlist_signups;

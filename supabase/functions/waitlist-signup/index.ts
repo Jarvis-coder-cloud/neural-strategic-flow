@@ -51,7 +51,7 @@ Deno.serve(async (req) => {
 
     const supabaseAdmin = createClient(supabaseUrl, serviceRoleKey);
 
-    const { error } = await supabaseAdmin.from("waitlist").insert({
+    const { error } = await supabaseAdmin.from("waitlist_signups").insert({
       name: sanitizedName,
       email: sanitizedEmail,
     });

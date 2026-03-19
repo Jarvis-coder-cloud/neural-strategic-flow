@@ -14,7 +14,7 @@ export type Database = {
   }
   public: {
     Tables: {
-      waitlist: {
+      waitlist_signups: {
         Row: {
           created_at: string
           email: string
