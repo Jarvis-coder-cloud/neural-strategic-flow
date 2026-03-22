@@ -1,19 +1,19 @@
-import { Brain, Wrench, RefreshCw } from "lucide-react";
+import { ListChecks, Footprints, TrendingUp } from "lucide-react";
 
 const pillars = [
-  { icon: Brain, title: "Strategic Thinking Engine", desc: "Analyzes your idea, identifies blind spots, and challenges assumptions before any code is written." },
-  { icon: Wrench, title: "Structured Execution", desc: "Generates landing pages and MVP starter kits that are aligned with your validated strategy." },
-  { icon: RefreshCw, title: "Continuous Refinement", desc: "Iteratively improves clarity and strategy before you invest in scaling." },
+  { icon: ListChecks, title: "Clear daily actions", desc: "No guesswork. You get exactly what to focus on today." },
+  { icon: Footprints, title: "Step-by-step execution", desc: "Follow a simple path. Do one thing at a time." },
+  { icon: TrendingUp, title: "Track your progress", desc: "See how far you've come. Stay motivated every day." },
 ];
 
 const SystemSection = () => (
   <section className="section-padding">
     <div className="container-narrow text-center">
       <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-        <span className="text-gradient">A Thinking + Execution System</span>
+        <span className="text-gradient">NeuroNet fixes that.</span>
       </h2>
       <p className="text-muted-foreground mb-12 max-w-xl mx-auto">
-        NeuroNet AI doesn't just execute — it thinks with you, then builds for you.
+        Simple. Clear. Actionable. Every single day.
       </p>
       <div className="grid md:grid-cols-3 gap-6">
         {pillars.map(({ icon: Icon, title, desc }) => (

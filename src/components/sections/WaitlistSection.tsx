@@ -8,11 +8,11 @@ const WaitlistSection = () => (
         <div className="flex items-center gap-4">
           <img src={neuronetLogo} alt="" className="w-12 h-12 rounded-xl bg-primary-foreground/10 p-1" />
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground">
-            Start building with clarity.
+            Start your execution plan.
           </h2>
         </div>
         <p className="text-primary-foreground/80 max-w-md">
-          Join the waitlist and be the first to access NeuroNet AI when we launch.
+          Join the waitlist and be first to get your daily action plan from NeuroNet AI.
         </p>
         <WaitlistForm />
       </div>

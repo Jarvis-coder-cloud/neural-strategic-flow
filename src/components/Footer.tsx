@@ -13,7 +13,7 @@ const Footer = () => (
             </span>
           </div>
           <p className="mt-3 text-sm text-muted-foreground max-w-xs">
-            Think clearly. Build correctly.
+            Stop guessing. Start executing.
           </p>
           <a
             href="https://www.instagram.com/neuronet.ai"
