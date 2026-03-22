@@ -1,10 +1,10 @@
-import { Lightbulb, Search, Wrench, RefreshCw } from "lucide-react";
+import { MessageSquare, ListOrdered, Play, RefreshCw } from "lucide-react";
 
 const steps = [
-  { num: 1, title: "Define your idea", desc: "Tell NeuroNet about your startup vision", icon: Lightbulb },
-  { num: 2, title: "AI analyzes clarity & risks", desc: "Deep analysis of your market and strategy", icon: Search },
-  { num: 3, title: "Generate aligned assets", desc: "Get MVPs and landing pages that match your strategy", icon: Wrench },
-  { num: 4, title: "Refine before scaling", desc: "Iterate and improve before going all-in", icon: RefreshCw },
+  { num: 1, title: "Tell your goal", desc: "Share what you're building or where you're stuck", icon: MessageSquare },
+  { num: 2, title: "AI finds your top 3 tasks", desc: "Get the 3 most important things to do right now", icon: ListOrdered },
+  { num: 3, title: "You execute", desc: "Do the work with clear guidance and focus", icon: Play },
+  { num: 4, title: "AI improves your plan", desc: "Your plan gets smarter as you make progress", icon: RefreshCw },
 ];
 
 const HowItWorksSection = () => (
@@ -14,7 +14,7 @@ const HowItWorksSection = () => (
         <span className="text-gradient">How It Works</span>
       </h2>
       <p className="text-muted-foreground mb-14 max-w-xl mx-auto">
-        Four simple steps from idea to validated execution.
+        Four simple steps. No complexity. Just action.
       </p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {steps.map(({ num, title, desc, icon: Icon }) => (

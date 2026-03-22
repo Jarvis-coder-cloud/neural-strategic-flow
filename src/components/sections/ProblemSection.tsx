@@ -1,19 +1,19 @@
-import { Target, AlertTriangle, Layers } from "lucide-react";
+import { HelpCircle, Brain, Battery } from "lucide-react";
 
 const problems = [
-  { icon: Target, title: "Unclear ICP", desc: "Founders skip deep market clarity and build for everyone — which means no one." },
-  { icon: AlertTriangle, title: "Premature Execution", desc: "Building features before validating whether anyone actually needs them." },
-  { icon: Layers, title: "Strategic Gaps", desc: "No structured thinking layer between idea and execution." },
+  { icon: HelpCircle, title: "Don't know what to do next", desc: "You have ideas but no clear action plan for today." },
+  { icon: Brain, title: "Overthink instead of executing", desc: "You spend hours planning but never actually start doing." },
+  { icon: Battery, title: "Struggle to stay consistent", desc: "You start strong but lose momentum after a few days." },
 ];
 
 const ProblemSection = () => (
   <section className="section-padding bg-muted/30">
     <div className="container-narrow text-center">
       <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-        <span className="text-gradient-warm">Most founders build before thinking.</span>
+        <span className="text-gradient-warm">Most founders are stuck because:</span>
       </h2>
       <p className="text-muted-foreground mb-12 max-w-xl mx-auto">
-        And it costs them months of wasted effort, wrong features, and missed opportunities.
+        It's not about working harder. It's about knowing exactly what to do.
       </p>
       <div className="grid md:grid-cols-3 gap-6">
         {problems.map(({ icon: Icon, title, desc }) => (

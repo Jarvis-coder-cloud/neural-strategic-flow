@@ -1,9 +1,9 @@
 import { Zap, Shield, Users } from "lucide-react";
 
 const stats = [
-  { icon: Zap, label: "Faster Clarity", desc: "Go from vague idea to validated strategy in minutes" },
-  { icon: Shield, label: "Risk Reduction", desc: "Identify blind spots before they become costly mistakes" },
-  { icon: Users, label: "Built for Solo Founders", desc: "Your AI co-founder that thinks before it builds" },
+  { icon: Zap, label: "Instant Clarity", desc: "Know your top priorities in seconds, not hours" },
+  { icon: Shield, label: "No More Guessing", desc: "Every action is backed by AI analysis of your goals" },
+  { icon: Users, label: "Built for Founders", desc: "Designed for people who want to do, not just plan" },
 ];
 
 const TrustSection = () => (
